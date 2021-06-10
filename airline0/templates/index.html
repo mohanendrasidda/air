@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{%block title%} airline{%endblock%}
+
+{%block body%}
+<h1>FLIGHTS</h1>
+<form action="/book" method="post">
+  <label>Select a flight: </label>
+  <select class="form-groupds" name="flight_id">
+    <option disabled selected value=flights>enter your flight</option>
+    {% for flight in flights %}
+
+<option value="{{flight.id}}">{{flight.origin}} to {{flight.destination}}</option>
+    {% endfor %}
+
+  </select>
+  <div>
+    <input type="text" name="name" placeholder="enter your name to book a flight">
+  </div>
+  <div>
+      <button>Book</button>
+  </div>
+</form>
+{%endblock%}
