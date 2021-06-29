@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script>
+      let set=0;
+      function foo(){
+      document.querySelector('h1').innerHTML='Bye dude'
+
+    }
+function goo(){
+  document.querySelector('h1').innerHTML='hello dude'
+}
+function red(){
+document.body.style.backgroundColor="red"
+}
+
+function green(){
+  document.body.style.backgroundColor="green"
+}
+
+function blue(){
+  document.body.style.backgroundColor="blue"
+}
+
+
+function tap(){
+  set++;
+  document.querySelector("#set").innerHTML=set;
+  if (set%10==0)
+  {
+  document.alert(`${set}`)
+}
+}
+    </script>
+    <title>query</title>
+  </head>
+  <body>
+    <h1 id="set">0</h1>
+    <h1>hello dude</h1>
+     <button onclick="foo()">submit</button>
+     <button onclick="goo()">submit</button>
+
+
+  <div>
+    <button onclick="red()">red</button>
+     <button onclick="green()">green</button>
+     <button onclick="blue()">blue</button>
+</div>
+<div>
+  <button onclick="tap()">tap me</button>
+</div>
+  </body>
+</html>
