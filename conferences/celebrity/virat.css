@@ -1,0 +1,11 @@
+body{
+  background-color:#CABCB9 
+}
+table,th,td{
+  padding: 2px;
+  border: 1px solid black;
+  margin: 20px solid black;
+}
+h1{
+  color: #981C02;
+}
